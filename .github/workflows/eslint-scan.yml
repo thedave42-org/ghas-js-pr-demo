@@ -51,7 +51,7 @@ jobs:
       - name: Upload sarif as artifact
         uses: actions/upload-artifact@v2
         with:
-          name: f1tv-build-artifacts
+          name: eslint-results.sarif
           path: |
             !node_modules/**
             nodegoat-eslint.sarif
