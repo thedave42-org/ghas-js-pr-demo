@@ -5,7 +5,6 @@ const ContributionsHandler = require("./contributions");
 const AllocationsHandler = require("./allocations");
 const MemosHandler = require("./memos");
 const ResearchHandler = require("./research");
-const sanitize = require('sanitize-filename');
 const {
     environmentalScripts
 } = require("../../config/config");
