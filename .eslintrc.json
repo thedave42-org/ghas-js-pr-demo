@@ -24,7 +24,7 @@
     "no-caller": 2,
     "quotes": [
       0,
-      "double",
+      "single",
       {
         "allowTemplateLiterals": true
       }
