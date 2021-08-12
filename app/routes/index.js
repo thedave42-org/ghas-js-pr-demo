@@ -13,7 +13,7 @@ const ErrorHandler = require("./error").errorHandler;
 
 const index = (app, db) => {
 
-    "use strict";
+    
 
     const sessionHandler = new SessionHandler(db);
     const profileHandler = new ProfileHandler(db);

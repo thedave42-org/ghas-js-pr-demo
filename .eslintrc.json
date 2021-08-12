@@ -4,11 +4,10 @@
     "node": true,
     "es6": true
   },
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "ecmaVersion": 6,
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    }
+    "sourceType": "module",
+    "requireConfigFile": false
   },
   "globals": {},
   "rules": {

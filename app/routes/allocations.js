@@ -4,7 +4,7 @@ const {
 } = require("../../config/config");
 
 function AllocationsHandler(db) {
-    "use strict";
+    
 
     const allocationsDAO = new AllocationsDAO(db);
 

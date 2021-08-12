@@ -21,7 +21,7 @@ redirectsTour.addSteps([{
 }]);
 
 $("#redirects-tour").on("click", () => {
-    "use strict";
+    
     redirectsTour.init();
     redirectsTour.restart();
 });

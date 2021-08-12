@@ -1,6 +1,6 @@
 $(function() {
 
-    "use strict";
+    
 
     if ($("#morris-chart-area").length > 0) {
         let oneYearAgo = new Date().getFullYear() - 1,
