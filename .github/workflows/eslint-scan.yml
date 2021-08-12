@@ -47,3 +47,12 @@ jobs:
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: nodegoat-eslint.sarif
+
+      - name: Upload artifacts on failure
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: f1tv-build-artifacts
+          path: |
+            !node_modules/**
+            nodegoat-eslint.sarif
