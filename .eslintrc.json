@@ -29,7 +29,7 @@
         "allowTemplateLiterals": true
       }
     ],
-    "no-undef": 2,
+    "no-undef": 0,
     "no-unused-vars": 0,
     "strict": [
       2,
