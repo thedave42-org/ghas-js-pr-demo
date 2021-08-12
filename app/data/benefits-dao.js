@@ -22,20 +22,20 @@ function BenefitsDAO(db) {
 
     this.updateBenefits = (userId, startDate, callback) => {
         usersCol.update({
-                _id: parseInt(userId)
-            }, {
-                $set: {
-                    benefitStartDate: startDate
-                }
-            },
-            (err, result) => {
-                if (!err) {
-                    console.log("Updated benefits");
-                    return callback(null, result);
-                }
-
-                return callback(err, null);
+            _id: parseInt(userId)
+        }, {
+            $set: {
+                benefitStartDate: startDate
             }
+        },
+        (err, result) => {
+            if (!err) {
+                console.log("Updated benefits");
+                return callback(null, result);
+            }
+
+            return callback(err, null);
+        }
         );
     };
 }
