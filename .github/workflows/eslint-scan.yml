@@ -34,9 +34,9 @@ jobs:
         with:
           node-version: "14"
 
-      - name: Install ESLint and SARIF generator
+      - name: Run npm i
         run: |
-          npm i eslint @microsoft/eslint-formatter-sarif
+          npm i
 
       - name: Run ESLint
         run: |
