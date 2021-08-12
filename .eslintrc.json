@@ -4,6 +4,12 @@
     "node": true,
     "es6": true
   },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
   "globals": {},
   "rules": {
     "no-bitwise": 0,
