@@ -5,6 +5,7 @@ const ContributionsHandler = require("./contributions");
 const AllocationsHandler = require("./allocations");
 const MemosHandler = require("./memos");
 const ResearchHandler = require("./research");
+const sanitize = require('sanitize-filename');
 const {
     environmentalScripts
 } = require("../../config/config");
@@ -85,7 +86,7 @@ const index = (app, db) => {
         const {
             page
         } = req.params
-        return res.render(`tutorial/${page}`, {
+        return res.render(`tutorial/${sanitize(page)}`, {
             environmentalScripts
         });
     });
