@@ -33,9 +33,9 @@ jobs:
       - run: git checkout HEAD^2
         if: ${{ github.event_name == 'pull_request' }}
 
-      - name: Run npm i
+      - name: Install ESLint and SARIF generator
         run: |
-          npm i
+          npm i eslint @microsoft/eslint-formatter-sarif
 
       - name: Run ESLint
         run: |
