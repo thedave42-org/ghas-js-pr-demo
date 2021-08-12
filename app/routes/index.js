@@ -86,7 +86,7 @@ const index = (app, db) => {
         const {
             page
         } = req.params
-        return res.render(`tutorial/${sanitize(page)}`, {
+        return res.render(`tutorial/${page}`, {
             environmentalScripts
         });
     });
