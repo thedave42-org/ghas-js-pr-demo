@@ -9,7 +9,7 @@
     "no-bitwise": 0,
     "camelcase": 2,
     "curly": 0,
-    "eqeqeq": 2,
+    "eqeqeq": 0,
     "wrap-iife": [
       2,
       "any"
@@ -45,7 +45,7 @@
     "max-len": [
       2,
       {
-        "code": 120,
+        "code": 180,
         "ignoreComments": true
       }
     ],
