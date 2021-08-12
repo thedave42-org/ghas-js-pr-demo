@@ -108,15 +108,15 @@ function UserDAO(db) {
 
     this.getNextSequence = (name, callback) => {
         db.collection("counters").findAndModify({
-                _id: name
-            }, [], {
-                $inc: {
-                    seq: 1
-                }
-            }, {
-                new: true
-            },
-            (err, data) =>  err ? callback(err, null) : callback(null, data.value.seq));
+            _id: name
+        }, [], {
+            $inc: {
+                seq: 1
+            }
+        }, {
+            new: true
+        },
+        (err, data) =>  err ? callback(err, null) : callback(null, data.value.seq));
     };
 }
 

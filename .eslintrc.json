@@ -1,14 +1,21 @@
 {
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
   },
   "globals": {},
   "rules": {
     "no-bitwise": 0,
     "camelcase": 2,
     "curly": 0,
-    "eqeqeq": 2,
+    "eqeqeq": 0,
     "wrap-iife": [
       2,
       "any"
@@ -22,10 +29,13 @@
     "new-cap": 2,
     "no-caller": 2,
     "quotes": [
-      2,
-      "single"
+      0,
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
     ],
-    "no-undef": 2,
+    "no-undef": 0,
     "no-unused-vars": 0,
     "strict": [
       2,
@@ -41,7 +51,7 @@
     "max-len": [
       2,
       {
-        "code": 120,
+        "code": 180,
         "ignoreComments": true
       }
     ],
