@@ -13,21 +13,21 @@
   "globals": {},
   "rules": {
     "no-bitwise": 0,
-    "camelcase": 2,
+    "camelcase": 1,
     "curly": 0,
     "eqeqeq": 0,
     "wrap-iife": [
-      2,
+      1,
       "any"
     ],
     "no-use-before-define": [
-      2,
+      1,
       {
         "functions": false
       }
     ],
-    "new-cap": 2,
-    "no-caller": 2,
+    "new-cap": 1,
+    "no-caller": 1,
     "quotes": [
       0,
       "single",
@@ -42,19 +42,19 @@
       "function"
     ],
     "indent": [
-      2,
+      1,
       4,
       {
         "SwitchCase": 1
       }
     ],
     "max-len": [
-      2,
+      1,
       {
         "code": 180,
         "ignoreComments": true
       }
     ],
-    "no-empty": 2
+    "no-empty": 1
   }
 }
