@@ -19,7 +19,7 @@ jobs:
       contents: read
       security-events: write
 
-    strategy:
+    steps:
       # Checkout your code repository to scan
     - name: Checkout repository
       uses: actions/checkout@v2
