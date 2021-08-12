@@ -5,7 +5,7 @@ const {
 } = require("../../config/config");
 
 function ResearchHandler(db) {
-    "use strict";
+    
 
     const researchDAO = new ResearchDAO(db);
 

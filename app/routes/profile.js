@@ -6,7 +6,7 @@ const {
 
 /* The ProfileHandler must be constructed with a connected db */
 function ProfileHandler(db) {
-    "use strict";
+    
 
     const profile = new ProfileDAO(db);
 

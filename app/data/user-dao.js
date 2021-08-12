@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt-nodejs");
 /* The UserDAO must be constructed with a connected database object */
 function UserDAO(db) {
 
-    "use strict";
+    
 
     /* If this constructor is called without the "new" operator, "this" points
      * to the global object. Log a warning and call it correctly. */

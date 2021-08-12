@@ -3,7 +3,7 @@ const UserDAO = require("./user-dao").UserDAO;
 /* The AllocationsDAO must be constructed with a connected database object */
 const AllocationsDAO = function(db){
 
-    "use strict";
+    
 
     /* If this constructor is called without the "new" operator, "this" points
      * to the global object. Log a warning and call it correctly. */

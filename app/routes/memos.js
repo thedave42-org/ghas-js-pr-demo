@@ -4,7 +4,7 @@ const {
 } = require("../../config/config");
 
 function MemosHandler(db) {
-    "use strict";
+    
 
     const memosDAO = new MemosDAO(db);
 

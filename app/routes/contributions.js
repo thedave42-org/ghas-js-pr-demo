@@ -5,7 +5,7 @@ const {
 
 /* The ContributionsHandler must be constructed with a connected db */
 function ContributionsHandler(db) {
-    "use strict";
+    
 
     const contributionsDAO = new ContributionsDAO(db);
 
