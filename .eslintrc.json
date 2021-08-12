@@ -39,7 +39,7 @@
     "no-unused-vars": 0,
     "strict": [
       2,
-      "function"
+      "safe"
     ],
     "indent": [
       1,
