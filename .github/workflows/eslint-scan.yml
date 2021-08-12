@@ -40,7 +40,7 @@ jobs:
 
       - name: Run ESLint
         run: |
-          ./node_modules/.bin/eslint -f @microsoft/eslint-formatter-sarif -o nodegoat-eslint.sarif . || exit 0
+          ./node_modules/.bin/eslint -f @microsoft/eslint-formatter-sarif -o nodegoat-eslint.sarif ./app || exit 0
         # ./node_modules/.bin/eslint . || exit 0
 
       - name: Upload results to GitHub
