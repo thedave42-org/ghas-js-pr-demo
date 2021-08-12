@@ -40,8 +40,8 @@ jobs:
 
       - name: Run ESLint
         run: |
-          ./node_modules/.bin/eslint .
-        #./node_modules/.bin/eslint -f @microsoft/eslint-formatter-sarif -o nodegoat-eslint.sarif .
+          ./node_modules/.bin/eslint -f @microsoft/eslint-formatter-sarif -o nodegoat-eslint.sarif . || exit 0
+        # ./node_modules/.bin/eslint . || exit 0
 
       - name: Upload results to GitHub
         uses: github/codeql-action/upload-sarif@v1
