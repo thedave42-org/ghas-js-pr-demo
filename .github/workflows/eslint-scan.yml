@@ -1,0 +1,44 @@
+name: "ESLint"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ master ]
+  schedule:
+    - cron: '20 5 * * 5'
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    name: Run ESLint
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      # Checkout your code repository to scan
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        # We must fetch at least the immediate parents so that if this is
+        # a pull request then we can checkout the head.
+        fetch-depth: 2
+
+    # If this run was triggered by a pull request event, then checkout
+    # the head of the pull request instead of the merge commit.
+    - run: git checkout HEAD^2
+      if: ${{ github.event_name == 'pull_request' }}
+
+    - name: Run ESLint Analysis
+      run: |
+        npm i
+        eslint -f @microsoft/eslint-formatter-sarif -o nodegoat-eslint.sarif .
+
+    - name: Upload results to GitHub
+      uses: github/codeql-action/upload-sarif@v1
+      with:
+        sarif_file: nodegoat-eslint.sarif
