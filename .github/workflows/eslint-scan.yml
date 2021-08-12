@@ -48,9 +48,8 @@ jobs:
         with:
           sarif_file: nodegoat-eslint.sarif
 
-      - name: Upload artifacts on failure
+      - name: Upload sarif as artifact
         uses: actions/upload-artifact@v2
-        if: failure()
         with:
           name: f1tv-build-artifacts
           path: |
